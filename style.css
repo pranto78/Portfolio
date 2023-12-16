@@ -19,7 +19,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 2% 20%;
     background-color: #f6f6f6;
     box-shadow: 5px 2px 25px 5px rgba(0, 0, 0, 0.2);
 }
@@ -37,9 +37,10 @@ nav{
 }
 .banner{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 9fr 3fr;
     align-items: center;
     height: 95vh;
+    padding: 0% 20%;
 }
 .intro{
     font-weight: 400;
@@ -68,6 +69,30 @@ nav{
     transition: 0.3s;
 }
 .my-pic{
-    width: 500px;
+    width: 400px;
     height: 250px;
+}
+/*about css start*/
+.about{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    align-items: center;
+    height: 95vh;
+    padding: 0% 20%;
+}
+.about-img img{
+    border-radius: 50%;
+    height: 500px;
+    width: 550px;
+}
+.about-content h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: #2f485e;
+    margin-bottom: 16px;
+}
+.about-content p{
+    font-size: 18px;
+    border-left: 2px solid #a4b6ac;
+    padding-left: 10px;
 }
