@@ -22,6 +22,8 @@ nav{
     padding: 2% 20%;
     background-color: #f6f6f6;
     box-shadow: 5px 2px 25px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
 }
 .nav-links ul{
     display: flex;
@@ -37,10 +39,26 @@ nav{
 }
 .banner{
     display: grid;
-    grid-template-columns: 9fr 3fr;
+    grid-template-columns: 7fr 5fr;
     align-items: center;
     height: 95vh;
     padding: 0% 20%;
+}
+.banner h3{
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #a4b6ac;
+    display: inline;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.banner p{
+    margin: 15px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2f485e;
 }
 .intro{
     font-weight: 400;
@@ -69,21 +87,24 @@ nav{
     transition: 0.3s;
 }
 .my-pic{
+    height: 500px;
     width: 400px;
-    height: 250px;
 }
 /*about css start*/
 .about{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 2px 2px 25px 4px #ddd;
+    background-color: #dfdfdf;
     display: grid;
-    grid-template-columns: 9fr 3fr;
+    grid-template-columns: 8fr 4fr;
     align-items: center;
-    height: 95vh;
-    padding: 0% 20%;
+    padding: 1% 20%;
 }
 .about-img img{
     border-radius: 50%;
-    height: 500px;
-    width: 550px;
+    height: 400px;
+    width: 300px;
 }
 .about-content h3{
     font-size: 30px;
@@ -91,10 +112,13 @@ nav{
     color: #2f485e;
     margin-bottom: 16px;
 }
-.about-content p{
+.about-text{
     font-size: 18px;
     border-left: 2px solid #a4b6ac;
-    padding-left: 10px;
+    padding-left: 15px;
+}
+.about-text p{
+    margin-bottom: 15px;
 }
 
 /*Technologies Start*/
@@ -185,4 +209,64 @@ nav{
 .icons a:hover{
     background-color: #a4b6ac;
     transition: .2s;
+}
+.contact-sec{
+    background-color: #dfdfdf;
+    box-shadow: 2px 2px 25px 2px #ddd;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 2% 0%;
+}
+.contact{
+    background-color: #fefefe;
+    width: 40vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+.contact h2{
+    font-size: 50px;
+    font-weight: 500;
+    color: #2f485e;
+    text-align: center;
+    margin: 50px 0;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+    row-gap: 10px;
+}
+.fields{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid #2f485e;
+}
+.contact-form button{
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: #2f485e;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.contact-form button:hover{
+    background-color: #a4b6ac;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: .3s;
+}
+/*footer*/
+.footer p{
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2f485e;
 }
